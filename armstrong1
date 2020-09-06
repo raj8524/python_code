@@ -1,0 +1,22 @@
+n=int(input("enter number :"))
+def power_sum(args):
+    str1=str(args)
+    addition = 0
+    l1=len(str1)
+    l2=l1
+    while l1!=0:
+        z=args//10
+        y=args%10
+        addition=addition+pow(y,l2)
+        l1 = l1 - 1
+        args=z
+    print(addition)
+    return addition
+def armstrong():
+    num = power_sum(n)
+    if num==int(n):
+        print("its armstrong")
+    else:
+        print("not armstrong")
+armstrong()
+
