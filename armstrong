@@ -1,0 +1,16 @@
+x=12136
+m=str(x)
+i=len(m)
+j=0
+z=0
+while i!=0:
+    z=x//10
+    y=x%10
+    i = i - 1
+    j=(10**i)*y+j
+    x=z
+print(j)
+if x==j:
+    print("armstrong")
+else:
+    print("not armstrong")
